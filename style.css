@@ -74,3 +74,111 @@ img {
     padding: 1rem;
     border-radius: 1rem;
 }
+
+
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .choices {
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .score-board {
+        gap: 3rem;
+        font-size: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.1rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        gap: 2rem;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 2.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+        text-align: center;
+    }
+}
+
+/* ===== SMOOTH HOVER ANIMATION ===== */
+
+.choice {
+    transition: 
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.choice:hover {
+    transform: scale(1.08);
+    background-color: #081b31;
+    box-shadow: 0 10px 25px rgba(8, 27, 49, 0.4);
+}
+
+/* Image hover effect */
+.choice img {
+    transition: transform 0.3s ease;
+}
+
+.choice:hover img {
+    transform: scale(1.1);
+}
+
